@@ -1,0 +1,3 @@
+[submodule ".vuepress"]
+	path = .vuepress
+	url = https://karaler@github.com/bytelang/dot-vuepress.git
