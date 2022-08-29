@@ -2,6 +2,10 @@
 
 `KPlayer`的配置文件顶级中的`plugin`用于配置插件资源相关参数。以下是完整的配置项
 
+::: tip 提醒
+lists为数组类型，若需要添加多个插件扩充lists数组对象即可
+:::
+
 ```json
 {
   "plugin": {
@@ -18,8 +22,6 @@
   }
 }
 ```
-
-
 
 ## 插件地表
 
@@ -59,7 +61,33 @@
 }
 ```
 
+## 加载多个插件
 
+加载多个插件，需要保证插件的各自`unique`唯一不重复
+```json
+{
+  "plugin": {
+    "lists": [
+      {
+        "path": "show-text",
+        "unique": "my_plugin",
+        "params": {
+          "text":"hello kplayer",
+          "font_size": "20"
+        }
+      },
+      {
+        "path": "show-text",
+        "unique": "my_plugin-2",
+        "params": {
+          "text":"hello kplayer-2",
+          "font_size": "20"
+        } 
+      }
+    ]
+  }
+}
+```
 
 ## 插件匹配方式
 
