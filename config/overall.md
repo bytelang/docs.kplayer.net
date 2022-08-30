@@ -2,11 +2,27 @@
 
 `KPlayer`的配置文件顶级存在一些全局配置，目前仅有一项
 
+
+
+<CodeGroup>
+  <CodeGroupItem title="json" active>
+
 ```json {2}
 {
   verrsion: "2.0.0"
 }
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {1}
+verrsion: "2.0.0"
+```
+
+  </CodeGroupItem>
+</CodeGroup>
+
 
 
 

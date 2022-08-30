@@ -4,6 +4,11 @@
 
 该参数开启时，任何客户端调用`rpc`或者`http`端口时都需要携带配置项的token，否则将会拒绝服务
 
+
+
+<CodeGroup>
+  <CodeGroupItem title="json" active>
+
 ```json
 {
   "auth": {
@@ -13,15 +18,41 @@
 }
 ```
 
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml
+auth:
+  auth_on: false
+  token: kplayer
+```
+
+  </CodeGroupItem>
+</CodeGroup>
+
 ## 开启auth
 
+<CodeGroup>
+  <CodeGroupItem title="json" active>
 
-
-```json {4-11}
+```json {3}
 {
-  "auth": false
+  "auth": {
+    "auth_on": false
+  }
 }
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {2}
+auth:
+  auth_on: false
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 
 
@@ -33,11 +64,29 @@
 
 
 
-```json {4-11}
+
+
+<CodeGroup>
+  <CodeGroupItem title="json" active>
+
+```json {3}
 {
-  "token": "kplayer"
+    "auth": {
+        "token": "kplayer"
+    }
 }
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {2}
+auth:
+  token: kplayer
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 
 

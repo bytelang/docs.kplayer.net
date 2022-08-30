@@ -2,6 +2,11 @@
 
 `KPlayer`的配置文件顶级中的`play`用于配置播放器、编解码、播放策略相关参数。以下是完整的配置项
 
+
+
+<CodeGroup>
+  <CodeGroupItem title="json" active>
+
 ```json
 {
   "play": {
@@ -31,19 +36,62 @@
 }
 ```
 
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml
+play:
+  start_point: 1
+  play_model: list
+  encode_model: rtmp
+  cache_on: false
+  cache_uncheck: false
+  skip_invalid_resource: false
+  fill_strategy: tile
+  rpc:
+    'on': true
+    http_port: 4156
+    grpc_port: 4157
+    address: 127.0.0.1
+  encode:
+    video_width: 854
+    video_height: 480
+    video_fps: 25
+    audio_channel_layout: 3
+    audio_sample_rate: 44100
+    bit_rate: 0
+    avg_quality: 0
+
+```
+
+  </CodeGroupItem>
+</CodeGroup>
+
 
 
 ## 起始位置
 
+<CodeGroup>
+  <CodeGroupItem title="json" active>
 
-
-```shell {3}
+```json {3}
 {
-	"paly": {
+	"play": {
 		"start_point": 1
 	}
 }
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {2}
+play:
+  start_point: 1
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 
 
@@ -57,7 +105,8 @@
 
 ## 播放模式
 
-
+<CodeGroup>
+  <CodeGroupItem title="json" active>
 
 ```json {3}
 {
@@ -67,6 +116,16 @@
 }
 ```
 
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {2}
+play:
+  play_model: loop
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 
 `play_model`  可以配置常规的播放模式，例如顺序播放、循环播放、随机播放等模式。
@@ -84,7 +143,8 @@
 
 ## 编码模式
 
-
+<CodeGroup>
+  <CodeGroupItem title="json" active>
 
 ```json {3}
 {
@@ -94,6 +154,16 @@
 }
 ```
 
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {2}
+play:
+  encode_model: rtmp
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 
 `encode_model`  可以配置编码模式。`KPlayer`不仅仅支持推流，它也可以作为视频解编码工具使用，可以将预期的视频内容输出到本地文件中。
@@ -109,15 +179,28 @@
 
 ## 开启缓存
 
-
+<CodeGroup>
+  <CodeGroupItem title="json" active>
 
 ```shell {3}
 {
-	"paly": {
+	"play": {
 		"cache_on": false
 	}
 }
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {2}
+play:
+  cache_on: false
+
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 
 
@@ -203,15 +286,27 @@ INFO[2022-08-30 13:38:07] checked play resource     duration=173 hit_cache=false
 
 ## 跳过检查缓存有效性
 
+<CodeGroup>
+  <CodeGroupItem title="json" active>
 
-
-```shell {3}
+```json {3}
 {
-	"paly": {
+	"play": {
 		"cache_uncheck": false
 	}
 }
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {2}
+play:
+  cache_uncheck: false
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 
 
@@ -223,7 +318,8 @@ INFO[2022-08-30 13:38:07] checked play resource     duration=173 hit_cache=false
 
 ##  跳过无效资源
 
-
+<CodeGroup>
+  <CodeGroupItem title="json" active>
 
 ```json {3}
 {
@@ -232,6 +328,17 @@ INFO[2022-08-30 13:38:07] checked play resource     duration=173 hit_cache=false
   }
 }
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {2}
+play:
+  skip_invalid_resource: true
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 
 
@@ -248,7 +355,8 @@ INFO[2022-08-30 13:38:07] checked play resource     duration=173 hit_cache=false
 
 ## 填充策略
 
-
+<CodeGroup>
+  <CodeGroupItem title="json" active>
 
 ```json {3}
 {
@@ -257,6 +365,17 @@ INFO[2022-08-30 13:38:07] checked play resource     duration=173 hit_cache=false
   }
 }
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {2}
+play:
+  fill_strategy: tile
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 
 
@@ -285,7 +404,8 @@ INFO[2022-08-30 13:38:07] checked play resource     duration=173 hit_cache=false
 
 ## RPC接口
 
-
+<CodeGroup>
+  <CodeGroupItem title="json" active>
 
 ```json {3-8}
 {
@@ -299,6 +419,21 @@ INFO[2022-08-30 13:38:07] checked play resource     duration=173 hit_cache=false
   }
 }
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {2-6}
+play:
+  rpc:
+    'on': true
+    http_port: 4156
+    grpc_port: 4157
+    address: 127.0.0.1
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 
 
@@ -330,7 +465,8 @@ address 遵循TCP/IP协议对Listen地址的规则要求。
 
 ## 编码参数
 
-
+<CodeGroup>
+  <CodeGroupItem title="json" active>
 
 ```json {3-11}
 {
@@ -347,6 +483,25 @@ address 遵循TCP/IP协议对Listen地址的规则要求。
   }
 }
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {2}
+play:
+  encode:
+    video_width: 854
+    video_height: 480
+    video_fps: 25
+    audio_channel_layout: 3
+    audio_sample_rate: 44100
+    bit_rate: 0
+    avg_quality: 0
+
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 
 

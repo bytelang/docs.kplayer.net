@@ -18,6 +18,14 @@ cp config.json.example config.json
 
 
 
+`KPlayer`现已支持使用yaml格式来作为它的配置文件，使用哪个完全取决于你的喜好。但是在同时存在`config.json`和`config.yaml`，json格式的优先级会更高
+
+
+
+**如果你使用yaml格式来作为配置文件，那么请将json后缀的文件修改为yaml**
+
+
+
 ## 修改配置文件
 
 打开`config.json`文件，可以看到预置的一些配置项

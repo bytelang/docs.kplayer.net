@@ -2,6 +2,9 @@
 
 `KPlayer`的配置文件顶级中的`output`用于配置输出资源相关参数。以下是完整的配置项
 
+<CodeGroup>
+  <CodeGroupItem title="json" active>
+
 ```json
 {
   "output": {
@@ -16,11 +19,26 @@
 }
 ```
 
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml
+output:
+  reconnect_internal: -1
+  lists:
+    - path: 'rtmp://127.0.0.1:1935/push'
+      unique: test
+```
+
+  </CodeGroupItem>
+</CodeGroup>
+
 
 
 ## 重连间隔时间
 
-
+<CodeGroup>
+  <CodeGroupItem title="json" active>
 
 ```json {3}
 {
@@ -29,6 +47,17 @@
   }
 }
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {2}
+play:
+  reconnect_internal: 5
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 
 
@@ -44,6 +73,10 @@
 
 
 
+
+<CodeGroup>
+  <CodeGroupItem title="json" active>
+
 ```json {3-8}
 {
   "output": {
@@ -56,6 +89,19 @@
   }
 }
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {2-4}
+output:
+  lists:
+    - path: 'rtmp://127.0.0.1:1935/push'
+      unique: test
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 
 

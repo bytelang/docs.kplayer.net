@@ -6,6 +6,10 @@
 lists为数组类型，若需要添加多个插件扩充lists数组对象即可
 :::
 
+
+<CodeGroup>
+  <CodeGroupItem title="json" active>
+
 ```json
 {
   "plugin": {
@@ -22,6 +26,23 @@ lists为数组类型，若需要添加多个插件扩充lists数组对象即可
   }
 }
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml
+plugin:
+  lists:
+    - path: show-text
+      unique: my_plugin
+      params:
+        text: hello kplayer
+        font_size: '20'
+
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 ## 插件地表
 
@@ -44,6 +65,10 @@ lists为数组类型，若需要添加多个插件扩充lists数组对象即可
 
 
 
+
+<CodeGroup>
+  <CodeGroupItem title="json" active>
+
 ```json {4-11}
 {
   "output": {
@@ -61,10 +86,31 @@ lists为数组类型，若需要添加多个插件扩充lists数组对象即可
 }
 ```
 
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {2-7}
+output:
+  lists:
+    - path: show-text
+      unique: my_plugin
+      params:
+        text: hello kplayer
+        font_size: '20'
+```
+
+  </CodeGroupItem>
+</CodeGroup>
+
 ## 加载多个插件
 
 加载多个插件，需要保证插件的各自`unique`唯一不重复
-```json
+
+
+<CodeGroup>
+  <CodeGroupItem title="json" active>
+
+```json {3-20}
 {
   "plugin": {
     "lists": [
@@ -88,6 +134,27 @@ lists为数组类型，若需要添加多个插件扩充lists数组对象即可
   }
 }
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {2-12}
+plugin:
+  lists:
+    - path: show-text
+      unique: my_plugin
+      params:
+        text: hello kplayer
+        font_size: '20'
+    - path: show-text
+      unique: my_plugin-2
+      params:
+        text: hello kplayer-2
+        font_size: '20'
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 ## 插件匹配方式
 

@@ -2,6 +2,9 @@
 
 `KPlayer`的配置文件顶级中的`resource`用于配置输入资源相关参数。以下是完整的资源配置项
 
+<CodeGroup>
+  <CodeGroupItem title="json" active>
+
 ```json
 {
 	"resource": {
@@ -16,9 +19,30 @@
 }
 ```
 
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml
+resource:
+  lists:
+    - /home/user/video/起风了.flv
+    - /home/user/video
+  extensions:
+    - mp4
+    - flv
+
+```
+
+  </CodeGroupItem>
+</CodeGroup>
+
 
 
 ## 配置资源列表
+
+<CodeGroup>
+  <CodeGroupItem title="json" active>
+
 
 ```json {3-6}
 {
@@ -30,6 +54,21 @@
 	}
 }
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {2-4}
+resource:
+  lists:
+    - /home/user/video/起风了.flv
+    - /home/user/video
+
+```
+
+  </CodeGroupItem>
+</CodeGroup>
+
 
 `lists`配置项为数组类型，允许支持多种协议。包括以下协议：
 
@@ -51,6 +90,10 @@
 
 若未标明`uri`协议类型默认使用`file://` 协议进行。所以，你也可以使用网络文件来配置视频输入
 
+
+<CodeGroup>
+  <CodeGroupItem title="json" active>
+
 ```json {4-6}
 {
 	"resource": {
@@ -63,11 +106,27 @@
 }
 ```
 
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {3-5}
+resource:
+  lists:
+    - '/home/user/video/起风了.flv'
+    - 'http://127.0.0.1/起风了.flv'
+    - 'ftp://127.0.0.1/起风了.flv'
+
+```
+
+  </CodeGroupItem>
+</CodeGroup>
+
 
 
 ## 配置文件夹路径
 
-
+<CodeGroup>
+  <CodeGroupItem title="json" active>
 
 ```json {6}
 {
@@ -79,6 +138,21 @@
   }
 }
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {4-6}
+resource:
+  lists:
+    - /home/user/video/
+  extensions:
+    - mp4
+    - flv
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 
 
