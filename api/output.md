@@ -58,7 +58,7 @@ curl "http://127.0.0.1:4156/output/list" \
 
 **返回值**
 
-```shell
+```json
 {
   "outputs": [
     {

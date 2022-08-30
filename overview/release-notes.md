@@ -1,6 +1,6 @@
 ## 版本更新内容
 
-1. 添加API访问Basic-Auth功能
+1.  <router-link to="/config/auth">添加API访问Basic-Auth功能</router-link>
 
 2. 修改编解码流程，提高推流编解码稳定性
 

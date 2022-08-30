@@ -79,7 +79,7 @@ curl -X "PATCH" "http://127.0.0.1:4156/plugin/update" \
 
 **返回值**
 
-```shell
+```json
 {
   "plugin": {
     "path": "plugin/show-text.kpe",
@@ -112,7 +112,7 @@ curl -X "DELETE" "http://127.0.0.1:4156/plugin/remove/{unique}" \
 
 **返回值**
 
-```shell
+```json
 {
   "plugin": {
     "path": "plugin/show-text.kpe",

@@ -103,3 +103,14 @@ tar zxvf kplayer-v0.5.6-linux_amd64.tar.gz
 
 
 
+
+
+## 查看当前版本号
+
+对已下载的`KPlayer`查看当前版本号，运行以下命令。查看主版本号
+
+```shell
+./kplayer
+```
+
+![image-20220830110930473](./install.assets/image-20220830110930473.png)
