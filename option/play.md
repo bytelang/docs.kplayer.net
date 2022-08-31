@@ -153,6 +153,18 @@ kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kp
 
 作为主程序开始的入口，它单独存在两个运行参数提供在后台运行与仅构建缓存模式
 
+同时它支持两个参数选项
+1. `-g`或者`--generate_cache` 使用该参数会忽略推流输出列表，仅仅参与缓存文件的构建。
+它生成缓存的速度比正常播放一边要花费的时间更短，具体时间取决于你的服务器性能
+```shell
+./kplayer play start -g
+```
+
+2. `-d`或者`--daemon` 使用该参数会使得`KPlayer`运行时放在后台，由Linux系统的守护进程来确保`ssh`结束后程序不会立马退出
+```shell
+./kplayer play start -d 
+```
+
 
 
 ## 获取运行状态
