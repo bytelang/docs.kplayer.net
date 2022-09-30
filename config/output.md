@@ -24,7 +24,7 @@
 
 ```json {3}
 {
-  "play": {
+  "output": {
     "reconnect_internal": 5
   }
 }
