@@ -42,7 +42,7 @@ output:
 
 ```json {3}
 {
-  "play": {
+  "output": {
     "reconnect_internal": 5
   }
 }
@@ -52,7 +52,7 @@ output:
   <CodeGroupItem title="yaml">
 
 ```yaml {2}
-play:
+output:
   reconnect_internal: 5
 ```
 
