@@ -162,6 +162,9 @@ resource:
 
 例如
 
+<CodeGroup>
+  <CodeGroupItem title="json" active>
+
 ```json {4,6-9,12-25,27}
 {
   "resource": {
@@ -195,11 +198,40 @@ resource:
 }
 ```
 
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {3-17}
+resource:
+  lists:
+    - /home/user/video/起风了.flv
+    - unique: qfl-res
+      path: /home/user/video/起风了.flv
+      seek: 10
+      end: 20
+    - unique: qfl-res
+      seek: 10
+      end: 20
+      groups:
+        - path: /home/user/video/background.png
+          media_type: video
+          persistent_loop: true
+        - path: /home/user/video/music.mp3
+          media_type: audio
+    - /home/user/video/起风了-(2).flv
+```
+
+  </CodeGroupItem>
+</CodeGroup>
+
 #### 配置单资源属性
 
 `KPlayer`现在支持对推流资源的的更多属性进行设置
 
 如果你想要使用此项功能，你需要定义更多的自定义选项。例如下方
+
+<CodeGroup>
+  <CodeGroupItem title="json" active>
 
 ```json {4-9}
 {
@@ -215,6 +247,21 @@ resource:
   }
 }
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {3-6}
+resource:
+  lists:
+    - unique: main-res
+      path: /home/user/video/起风了.flv
+      seek: 10
+      end: 20
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 <br/>
 
@@ -241,6 +288,9 @@ resource:
 
 如果你想要使用此项功能，你需要定义更多的自定义选项。例如下方
 
+<CodeGroup>
+  <CodeGroupItem title="json" active>
+
 ```json {4-19}
 {
   "resource": {
@@ -265,6 +315,26 @@ resource:
   }
 }
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="yaml">
+
+```yaml {3-11}
+resource:
+  lists:
+    - unique: main-res
+      seek: 10
+      end: 20
+      groups:
+        - path: /home/user/video/起风了.flv
+          media_type: video
+          persistent_loop: true
+        - path: /home/user/video/music.mp3
+          media_type: audio
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 <br/>
 
