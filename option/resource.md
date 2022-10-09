@@ -4,7 +4,7 @@
 
 ```shell {14-19}
 > kplayer ./kplayer resource --help
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -52,7 +52,7 @@ Use "kplayer resource [command] --help" for more information about a command.
 
 ```shell
 > ./kplayer resource add "/home/user/video/起风了.flv" "qfl"
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -72,7 +72,7 @@ resource:
 
 ```shell
 > ./kplayer resource all
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -92,7 +92,7 @@ resource:
 
 ```shell
 > ./kplayer resource current
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -127,7 +127,7 @@ seek_format: "0:4:49"
 
 ```shell
 > ./kplayer resource list
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -149,7 +149,7 @@ resource:
 
 ```shell
 > ./kplayer resource remove qfl
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -176,7 +176,7 @@ resource:
 
 ```shell
 > ./kplayer resource seek "" 10
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release

@@ -4,7 +4,7 @@
 
 ```shell {14-16}
 > kplayer ./kplayer output --help
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -51,7 +51,7 @@ Use "kplayer output [command] --help" for more information about a command.
 
 ```shell
 > ./kplayer output add "rtmp://127.0.0.1/live/new" "new"
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -68,7 +68,7 @@ output:
 
 ```shell
 > ./kplayer output list
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -94,7 +94,7 @@ kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kp
 
 ```shell
 > ./kplayer output remove new
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release

@@ -4,7 +4,7 @@
 
 ```shell {14-21}
 > kplayer ./kplayer play --help
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -49,7 +49,7 @@ Use "kplayer play [command] --help" for more information about a command.
 
 ```shell
 > ./kplayer play continue
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -66,7 +66,7 @@ kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kp
 
 ```shell
 > ./kplayer play duration
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -84,7 +84,7 @@ start_timestamp: 1661329296
 
 ```shell
 > ./kplayer play info
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -115,7 +115,7 @@ start_time_timestamp: 1660094266
 
 ```shell
 > ./kplayer play pause
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -130,7 +130,7 @@ kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kp
 
 ```shell
 > ./kplayer resource skip
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -175,7 +175,7 @@ kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kp
 
 ```shell
 > ./kplayer play status
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -194,7 +194,7 @@ INFO[2022-08-24 16:30:41] kplayer active running on daemon mode         pid=3560
 
 ```shell
 > ./kplayer play stop
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release

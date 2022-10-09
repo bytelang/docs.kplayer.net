@@ -4,7 +4,7 @@
 
 ```shell {14-17}
 > kplayer ./kplayer plugin --help
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -54,7 +54,7 @@ Use "kplayer plugin [command] --help" for more information about a command.
 
 ```shell
 > ./kplayer plugin add show-text mytext --param "fontsize=20" --param "text=hello kplayer"
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -76,7 +76,7 @@ plugin:
 
 ```shell
 > ./kplayer plugin list
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -100,7 +100,7 @@ plugins:
 
 ```shell
 > ./kplayer plugin update mytext --param "text=update text"
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release
@@ -126,7 +126,7 @@ plugin:
 
 ```shell
 > ./kplayer plugin remove mytext
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.21.3) type with Release

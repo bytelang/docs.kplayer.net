@@ -19,9 +19,9 @@
 将会看到以下输出信息并保持程序继续运行，即成功推流
 
 ```shell
-kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
-  libkplayer version: v1.4.13-3-g1e2ef3f plugin version: 1.5.1 license version: v1
-  toolchains AppleClang(13.1.6.13160021) C++ Standard 17 on Darwin-arm64-21.5.0
+kplayer for golang v0.5.7 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
+  libkplayer version: v1.5.2 plugin version: 1.5.1 license version: v1
+  toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
   build with build-chains cmake(3.22.3) type with Release
   Hope you have a good experience.
 -------------------------------------------------------------------------------------------------------------------
