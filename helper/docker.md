@@ -21,7 +21,7 @@
 运行以下命令拉取kplayer最新版本的镜像
 
 ```shell
-> docker pull bytelang:kplayer:latest
+> docker pull bytelang/kplayer:latest
 ```
 
 目前支持amd64(x86_64)与arm64(aarch64)两种架构版本上的docker运行，运行命令会匹配当前CPU架构的版本拉取到本地
