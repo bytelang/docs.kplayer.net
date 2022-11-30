@@ -129,7 +129,7 @@ kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kp
 ## 跳过当前播放资源
 
 ```shell
-> ./kplayer resource skip
+> ./kplayer play skip
 kplayer for golang v0.5.6 Copyright(c) 2019-2022 the ByteLang Studio (https://kplayer.bytelang.cn)
   libkplayer version: v1.4.14 plugin version: 1.5.1 license version: v1
   toolchains GNU(10.3.1) C++ Standard 17 on Linux-x86_64-5.18.14-arch1-1
