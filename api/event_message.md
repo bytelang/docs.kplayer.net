@@ -30,7 +30,7 @@ ws://127.0.0.1:4156/websocket
 的数据结构定义依赖protobuf的定义结构
 
 在这里[https://github.com/bytelang/libkplayer-proto](https://github.com/bytelang/libkplayer-proto)
-查看到所有的消息类型定义和他们的数据结构
+查看到所有的消息类型定义和它们的数据结构
 
 包含了所有生命周期内可能会接收到的所有消息
 ```javascript
