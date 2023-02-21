@@ -21,8 +21,6 @@ curl "http://127.0.0.1:4156/play/information" \
 }
 ```
 
-
-
 ## 获取运行时长
 
 **请求**
@@ -41,8 +39,6 @@ curl "http://127.0.0.1:4156/play/duration" \
   "duration_timestamp": "14"
 }
 ```
-
-
 
 ## 结束播放
 
@@ -64,10 +60,6 @@ curl -X "POST" "http://127.0.0.1:4156/play/stop" \
 {}
 ```
 
-
-
-
-
 ## 暂停播放
 
 **请求**
@@ -83,8 +75,6 @@ curl -X "POST" "http://127.0.0.1:4156/play/pause" \
 ```json
 {}
 ```
-
-
 
 ## 继续播放
 
@@ -102,8 +92,6 @@ curl -X "POST" "http://127.0.0.1:4156/play/continue" \
 {}
 ```
 
-
-
 ## 跳过当前播放资源
 
 **请求**
@@ -112,6 +100,52 @@ curl -X "POST" "http://127.0.0.1:4156/play/continue" \
 curl -X "POST" "http://127.0.0.1:4156/play/skip" \
      -H 'Content-Type: application/json; charset=utf-8' \
      -d $'{}'
+```
+
+**返回值**
+
+```json
+{}
+```
+
+## 获取当前编码信息
+
+**请求**
+
+```shell
+curl "http://127.0.0.1:4156/play/encode" \
+     -H 'Content-Type: application/json; charset=utf-8' \
+     -d $'{}'
+```
+
+**返回值**
+
+```json
+{
+  "video_width": 854,
+  "video_height": 480,
+  "video_fps": "25",
+  "audio_channel_layout": 3,
+  "audio_sample_rate": 44100,
+  "bit_rate": "0",
+  "avg_quality": "0"
+}
+```
+
+## 更改当前编码平均质量
+
+::: tip 提醒
+该接口仅在未指定`bit_rate`固定值参数时生效，并且不会在使用缓存并命中缓存文件时生效
+:::
+
+**请求**
+
+```shell
+curl -X "POST" "http://127.0.0.1:4156/play/encode/avg_quality" \
+     -H 'Content-Type: application/json; charset=utf-8' \
+     -d $'{
+  "avg_quality": 30
+}'
 ```
 
 **返回值**
