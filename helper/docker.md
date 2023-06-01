@@ -43,7 +43,7 @@ sudo docker run --rm --name kplayer -v $PWD:/config \
 修改该配置文件后运行容器
 
 ```shell
-sudo docker run -it —name kplayer \
+sudo docker run -it --name kplayer \
  -v /video:/video \
  -v $PWD/config.json:/kplayer/config.json \
  bytelang/kplayer:latest
