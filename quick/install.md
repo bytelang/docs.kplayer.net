@@ -76,10 +76,10 @@ kplayer/config.json.example
 
 
 
-在这里查看当前版本[下载地址](/overview/download)，选择服务器上http客户端程序下载到本地来。如果你的机器架构为`amd64`，以下是它的实例命令
+在这里查看当前版本<router-link to="/overview/download.html">下载地址</router-link>，选择服务器上http客户端程序下载到本地来。如果你的机器架构为`amd64`，以下是它的实例命令
 
 ```shell
-wget http://download.bytelang.cn/kplayer-v0.5.8-linux_amd64.tar.gz
+wget https://gitee.com/bytelang/kplayer-go/releases/download/v0.5.8/kplayer-v0.5.8-linux_amd64.tar.gz
 ```
 
 等待文件下载完成，你就得到了对应下载版本的压缩包。执行解压操作
